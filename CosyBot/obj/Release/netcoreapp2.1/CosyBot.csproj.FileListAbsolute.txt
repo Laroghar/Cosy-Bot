@@ -1,0 +1,12 @@
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\Settings.job
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\CosyBot.deps.json
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\CosyBot.runtimeconfig.json
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\CosyBot.runtimeconfig.dev.json
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\CosyBot.dll
+E:\Discord bot\CosyBot\CosyBot\bin\Release\netcoreapp2.1\CosyBot.pdb
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.csprojAssemblyReference.cache
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.csproj.CoreCompileInputs.cache
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.AssemblyInfoInputs.cache
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.AssemblyInfo.cs
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.dll
+E:\Discord bot\CosyBot\CosyBot\obj\Release\netcoreapp2.1\CosyBot.pdb
