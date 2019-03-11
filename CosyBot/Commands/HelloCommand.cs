@@ -1,4 +1,5 @@
 ﻿using Discord.WebSocket;
+using System;
 using System.Threading.Tasks;
 
 public class HelloCommand : Command
@@ -12,7 +13,7 @@ public class HelloCommand : Command
         this.message = message;
     }
 
-    public new async Task Exec()
+    public override async Task Exec()
     {
         await this.message.Channel.SendMessageAsync("Greetings!");
     }

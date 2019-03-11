@@ -1,4 +1,5 @@
 ﻿using Discord.WebSocket;
+using System;
 using System.Threading.Tasks;
 
 public class Command
@@ -12,7 +13,8 @@ public class Command
         this.message = message;
 	}
 
-    public async Task Exec()
+    public virtual async Task Exec()
     {
+        Console.WriteLine("commande reçues : " + message.Content);
     }
 }

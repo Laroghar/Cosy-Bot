@@ -28,7 +28,7 @@ namespace CosyBot
         {
             discord = new DiscordSocketClient();
             discord.Log += Log;
-            await LoginDiscord("NTM2NTQwMzczMjAwMTQyMzQ2.DyYNTQ.RmsYj6lMnNAB-1PCVxBKd1-5XFs", discord);
+            await LoginDiscord("NTM2NTQwMzczMjAwMTQyMzQ2.D2OdMw.OyMToxArLzH2ltTXzg1Mcv7gfUE", discord);
             discord.MessageReceived += MessageReceived;
             await Task.Delay(-1);
         }
@@ -49,7 +49,7 @@ namespace CosyBot
 
         private async Task MessageReceived(SocketMessage message)
         {
-           await manager.ExecCommand(message);
+            await manager.ExecCommand(message);
         }
         private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         {
