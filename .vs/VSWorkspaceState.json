@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CosyBot"
+    "\\CosyBot",
+    "\\CosyBot\\Config"
   ],
-  "SelectedNode": "\\CosyBot\\obj",
+  "SelectedNode": "\\CosyBot\\Config\\Commands.cs",
   "PreviewInSolutionExplorer": false
 }

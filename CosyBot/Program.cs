@@ -11,6 +11,7 @@ namespace CosyBot
     {
         private static System.Timers.Timer timer;
         DiscordSocketClient discord;
+        private CommandManager manager;
 
         public static void Main(string[] args)
         {
@@ -27,7 +28,7 @@ namespace CosyBot
         {
             discord = new DiscordSocketClient();
             discord.Log += Log;
-            await LoginDiscord("NTM2NTQwMzczMjAwMTQyMzQ2.DyYNTQ.RmsYj6lMnNAB-1PCVxBKd1-5XFs", discord);
+            await LoginDiscord("NTM2NTQwMzczMjAwMTQyMzQ2.D2OdMw.OyMToxArLzH2ltTXzg1Mcv7gfUE", discord);
             discord.MessageReceived += MessageReceived;
             await Task.Delay(-1);
         }
@@ -42,21 +43,13 @@ namespace CosyBot
         {
             client.LoginAsync(TokenType.Bot, token);
             client.StartAsync();
+            this.manager = new CommandManager(discord);
             return Task.CompletedTask;
         }
 
         private async Task MessageReceived(SocketMessage message)
         {
-            if (message.Content == "!Bonjour")
-            {
-                await message.Channel.SendMessageAsync("Greetings!");
-            }
-
-            if (message.Content == "!Aurevoir")
-            {
-                await message.Channel.SendMessageAsync("Have a nice day, Sir!");
-            }
-
+            await manager.ExecCommand(message);
         }
         private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         {
